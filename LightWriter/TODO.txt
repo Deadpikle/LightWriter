@@ -1,0 +1,39 @@
+﻿TODO
+=====
+    ====Code related items====
+	-Change "remove color" to "default color" in multiple places
+	-Can the user change blocks during execution?
+		-If not, optimize blocks by only calculating rows/cols/squares on first run ("init" step)
+			-also checks for good/bad input in certain cases of blocks
+		-If so, only calculate them upon selection change (since right now it is horribly
+			unoptimized)
+	-Fully integrate GUI.js grid with the LightGrid() class [aka combine them into the
+        LightGrid class]
+		-This has changed somewhat, revisit this later
+	-Use loops in the default.aspx (or html templating or something) so that the aspx file is cleaner/shorter
+	-Use better block inheritance in the blocks
+	-Optimize blocks and clean up block code
+	-Change labels in blocks upon selection change; i.e. when the user selects a plural of ticks it says "ticks"
+		and when the user selects "1" for # of ticks it says "tick."
+	-Refactor ajaxServicesAndDialogs.js file stuff with login session check stuff so that it is nicer
+	-Fix all the stupid issues where numbers are turning into strings and vice versa in the JS which confuses the C#
+	-Make all blocks use the new constructObject() syntax to initialize values
+		-Actually, make them do inheritance the RIGHT WAY: 
+			http://stackoverflow.com/questions/4152931/javascript-inheritance-call-super-constructor-or-use-prototype-chain
+	-Remove all the "block" appended types off the block classes (redundant info)
+	-set up "classes" better by using the prototype? (functionsAndClasses.js, mostly pertains to blocks)
+	-Create an ErrorDictionary type for easier returns
+
+    ====Server related items=====
+    -Set up the server to use HTTPS so that password transfer is secure
+    -Be unlazy and send back more nicely formatted items (aka actually get around to making
+        classes for everything blah blah blah -- too time consuming at this point)
+
+    ====Eventual nice features====
+    -Convert logging in/out system to ASP.Net login control which should automatically
+        manage logging in, out, and password recovery.
+        -Might not be able to integrate this with other user tables if we can't get ids
+        -Might be a huge pain and not worth the effort
+
+	==== BUGS ====
+	IE: no shadows on hovered buttons

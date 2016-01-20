@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1D999A4-0CE5-4D09-AD4A-6B6DCD5D70CF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LightWriter</RootNamespace>
+    <AssemblyName>LightWriter</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DeployIisAppPath>Lightwriter</DeployIisAppPath>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DeployIisAppPath>Lightwriter</DeployIisAppPath>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SquishIt.Framework, Version=0.9.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\SquishIt.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AjaxServices.asmx" />
+    <Content Include="Content\images\ajax-loader-big.gif" />
+    <Content Include="Content\images\ajax-loader-menu.gif" />
+    <Content Include="Content\images\ajax-loader-share.gif" />
+    <Content Include="Content\images\ajax-loader-small.gif" />
+    <Content Include="Content\images\BlocksBanner.png" />
+    <Content Include="Content\images\CircleIcon.png" />
+    <Content Include="Content\images\CommentIcon.png" />
+    <Content Include="Content\images\ComparisonIcon.png" />
+    <Content Include="Content\images\ComparisonMove.gif" />
+    <Content Include="Content\images\EditorButton.png" />
+    <Content Include="Content\images\EyeButton.png" />
+    <Content Include="Content\images\FullButton.png" />
+    <Content Include="Content\images\LoadButton.png" />
+    <Content Include="Content\images\LoginButton.png" />
+    <Content Include="Content\images\LogoutButton.png" />
+    <Content Include="Content\images\MenuBanner.png" />
+    <Content Include="Content\images\PatternBanner.png" />
+    <Content Include="Content\images\PresentationFullButton.png" />
+    <Content Include="Content\images\PresentationLoginButton.png" />
+    <Content Include="Content\images\PresentationLogoutButton.png" />
+    <Content Include="Content\images\PresentButton.png" />
+    <Content Include="Content\images\RangeIcon.png" />
+    <Content Include="Content\images\RangeMove.gif" />
+    <Content Include="Content\images\RulesButton.png" />
+    <Content Include="Content\images\SaveButton.png" />
+    <Content Include="Content\images\ShareButton.png" />
+    <Content Include="Content\images\SingleIcon.png" />
+    <Content Include="Content\images\SingleMove.gif" />
+    <Content Include="Content\images\StartButton.png" />
+    <Content Include="Content\images\StopButton.png" />
+    <Content Include="Content\images\TrashButton.png" />
+    <Content Include="Content\index.css" />
+    <Content Include="Content\GUI.css" />
+    <Content Include="Content\themes\css\LightWriterTheme\images\animated-overlay.gif" />
+    <Content Include="Content\themes\css\LightWriterTheme\images\ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+    <Content Include="Content\themes\css\LightWriterTheme\images\ui-bg_dots-small_65_a6a6a6_2x2.png" />
+    <Content Include="Content\themes\css\LightWriterTheme\images\ui-bg_flat_0_333333_40x100.png" />
+    <Content Include="Content\themes\css\LightWriterTheme\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="Content\themes\css\LightWriterTheme\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\css\LightWriterTheme\images\ui-bg_glass_55_fbf8ee_1x400.png" />
+    <Content Include="Content\themes\css\LightWriterTheme\images\ui-bg_highlight-hard_100_eeeeee_1x100.png" />
+    <Content Include="Content\themes\css\LightWriterTheme\images\ui-bg_highlight-hard_100_f6f6f6_1x100.png" />
+    <Content Include="Content\themes\css\LightWriterTheme\images\ui-bg_highlight-soft_15_cc0000_1x100.png" />
+    <Content Include="Content\themes\css\LightWriterTheme\images\ui-icons_004276_256x240.png" />
+    <Content Include="Content\themes\css\LightWriterTheme\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\themes\css\LightWriterTheme\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\css\LightWriterTheme\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Content\themes\css\LightWriterTheme\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="ErrorPage.html" />
+    <Content Include="Global.asax" />
+    <Content Include="lib\AjaxMin.dll" />
+    <Content Include="lib\AjaxMin.pdb" />
+    <Content Include="lib\closure-compiler\compiler.jar" />
+    <Content Include="lib\EcmaScript.NET.dll" />
+    <Content Include="lib\Iesi.Collections.dll" />
+    <Content Include="lib\SquishIt.Framework.dll" />
+    <Content Include="lib\SquishIt.Framework.pdb" />
+    <Content Include="lib\Yahoo.Yui.Compressor.dll" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Code\LightWriter.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LightWriter.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="lib\closure-compiler\COPYING" />
+    <Content Include="lib\closure-compiler\README" />
+    <None Include="Properties\PublishProfiles\DeployLiteWriter.pubxml" />
+    <Content Include="Scripts\ajaxServicesAndDialogs.js" />
+    <Content Include="Scripts\functionsAndClasses.js" />
+    <Content Include="Scripts\GUI.js" />
+    <Content Include="Scripts\index.js" />
+    <Content Include="Scripts\Plugins\ColorMixer\color_mixer.js" />
+    <Content Include="Scripts\Plugins\ColorMixer\jquery.color.2.1.2.min.js" />
+    <Content Include="Scripts\Plugins\jquery-1.10.2.js" />
+    <Content Include="Scripts\Plugins\jquery-ui-1.10.3.js" />
+    <Content Include="Scripts\Plugins\jquery-ui-1.10.3.min.js" />
+    <Content Include="Scripts\Plugins\Procolor\img\procolor_win_bars.png" />
+    <Content Include="Scripts\Plugins\Procolor\img\procolor_win_bg.gif" />
+    <Content Include="Scripts\Plugins\Procolor\img\procolor_win_bg.png" />
+    <Content Include="Scripts\Plugins\Procolor\img\procolor_win_boxes.png" />
+    <Content Include="Scripts\Plugins\Procolor\img\procolor_win_close.png" />
+    <Content Include="Scripts\Plugins\Procolor\img\procolor_win_drop.png" />
+    <Content Include="Scripts\Plugins\Procolor\img\procolor_win_palette_raw.png" />
+    <Content Include="Scripts\Plugins\Procolor\img\procolor_win_sel_circle.gif" />
+    <Content Include="Scripts\Plugins\Procolor\img\procolor_win_sel_circle.png" />
+    <Content Include="Scripts\Plugins\Procolor\img\procolor_win_sel_rect.gif" />
+    <Content Include="Scripts\Plugins\Procolor\img\procolor_win_sel_rect.png" />
+    <Content Include="Scripts\Plugins\Procolor\img\procolor_win_wheel_black.png" />
+    <Content Include="Scripts\Plugins\Procolor\img\procolor_win_wheel_rgb.jpg" />
+    <Content Include="Scripts\Plugins\Procolor\procolor.compressed.js" />
+    <Content Include="Scripts\Plugins\Procolor\procolor.js" />
+    <Content Include="Scripts\Plugins\Procolor\prototype.js" />
+    <Content Include="Testing\css\qunit-1.12.0.css" />
+    <Content Include="Testing\index.html" />
+    <Content Include="Testing\js\qunit-1.12.0.js" />
+    <Content Include="Testing\js\tests.js" />
+    <Content Include="TODO.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjaxServices.asmx.cs">
+      <DependentUpon>AjaxServices.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Code\AlgorithmManip.cs" />
+    <Compile Include="App_Code\LightWriter.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LightWriter.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\UserLogin.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Code\LightWriter.dbml.layout">
+      <DependentUpon>LightWriter.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2764</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8383/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

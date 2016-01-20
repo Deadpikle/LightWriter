@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.75, 10.875" name="LightWriter">
+  <DataContextMoniker Name="/LightWriterDataContext" />
+  <nestedChildShapes>
+    <classShape Id="be241b84-3881-4d31-81e7-a672fb91e6d0" absoluteBounds="2.125, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/LightWriterDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7905d76f-b554-492b-8adb-47c4f1e6fbba" absoluteBounds="2.1399999999999997, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7855ec44-ca48-46b3-a5e1-ff140762b48a" absoluteBounds="6.125, 1.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LightWriterDataContext/Algorithm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0cdd3936-e5d8-47a0-bc58-a4d210515d26" absoluteBounds="6.1400000000000006, 1.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.125 : 1.56814697265625); (6.125 : 1.56814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LightWriterDataContext/User/User_Algorithm" />
+      <nodes>
+        <classShapeMoniker Id="be241b84-3881-4d31-81e7-a672fb91e6d0" />
+        <classShapeMoniker Id="7855ec44-ca48-46b3-a5e1-ff140762b48a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e962f94c-71fa-4d0b-8f7e-05123401fe16" absoluteBounds="0.625, 3, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LightWriterDataContext/SingleBlock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23ee8888-bb93-4dc2-a303-6ff2162aa03d" absoluteBounds="0.64000000000000057, 3.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.125 : 2.4830435904948); (4.61458333333333 : 2.48304359049479 : JumpStart); (4.44791666666667 : 2.4830435904948 : JumpEnd); (1.34375 : 2.4830435904948); (1.34375 : 3)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LightWriterDataContext/Algorithm/Algorithm_SingleBlock" />
+      <nodes>
+        <classShapeMoniker Id="7855ec44-ca48-46b3-a5e1-ff140762b48a" />
+        <classShapeMoniker Id="e962f94c-71fa-4d0b-8f7e-05123401fe16" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="dc4ae799-57e0-4629-8062-35747fecdb86" absoluteBounds="1, 6.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LightWriterDataContext/ComparisonBlock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f702d32-8ba9-48bd-9ae6-2566839b34eb" absoluteBounds="1.0150000000000006, 6.8350000000000009, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.125 : 2.82859537760417); (5.75 : 3.20359537760417); (5.75 : 6); (5.11458333333333 : 6 : JumpStart); (4.94791666666667 : 6 : JumpEnd); (3.37653746153846 : 6); (3 : 6.37653746153846)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LightWriterDataContext/Algorithm/Algorithm_ComparisonBlock" />
+      <nodes>
+        <classShapeMoniker Id="7855ec44-ca48-46b3-a5e1-ff140762b48a" />
+        <classShapeMoniker Id="dc4ae799-57e0-4629-8062-35747fecdb86" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="484b1a59-bbd5-44c5-a4d5-fe0eca9e90a3" absoluteBounds="9.25, 3.375, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/LightWriterDataContext/CircleBlock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d29c172d-d49c-4314-a50c-41349aaf1a2a" absoluteBounds="9.265, 3.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.3007845625 : 2.82859537760417); (7.3007845625 : 4.21875); (7.69205894791667 : 4.21875 : JumpStart); (7.85872561458333 : 4.21875 : JumpEnd); (9.25 : 4.21875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LightWriterDataContext/Algorithm/Algorithm_CircleBlock" />
+      <nodes>
+        <classShapeMoniker Id="7855ec44-ca48-46b3-a5e1-ff140762b48a" />
+        <classShapeMoniker Id="484b1a59-bbd5-44c5-a4d5-fe0eca9e90a3" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d75992b6-a45d-4115-a1c2-caf38c108230" absoluteBounds="2.875, 3, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/LightWriterDataContext/SingleMoveBlock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="93784c62-9cb5-485b-85b6-5684cd18fd67" absoluteBounds="2.89, 3.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.125 : 2.13749180338542); (4.53125 : 2.13749180338542); (4.53125 : 3)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LightWriterDataContext/Algorithm/Algorithm_SingleMoveBlock" />
+      <nodes>
+        <classShapeMoniker Id="7855ec44-ca48-46b3-a5e1-ff140762b48a" />
+        <classShapeMoniker Id="d75992b6-a45d-4115-a1c2-caf38c108230" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f54fe27f-7332-41d8-853c-bb81d604bd9d" absoluteBounds="3.125, 6.375, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/LightWriterDataContext/ComparisonMoveBlock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79efed43-f82c-4042-9302-4d05d1736b4a" absoluteBounds="3.1399999999999997, 6.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.125 : 2.65581948404948); (5.03125 : 2.65581948404948); (5.03125 : 6.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LightWriterDataContext/Algorithm/Algorithm_ComparisonMoveBlock" />
+      <nodes>
+        <classShapeMoniker Id="7855ec44-ca48-46b3-a5e1-ff140762b48a" />
+        <classShapeMoniker Id="f54fe27f-7332-41d8-853c-bb81d604bd9d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b5fef771-b370-4a63-8969-f7b475a527bb" absoluteBounds="7.125, 6.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LightWriterDataContext/RangeBlock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c8b3426-ce17-495a-acf6-a5b24813bb80" absoluteBounds="7.1400000000000006, 6.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.77539228125 : 2.82859537760417); (7.77539228125 : 6.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LightWriterDataContext/Algorithm/Algorithm_RangeBlock" />
+      <nodes>
+        <classShapeMoniker Id="7855ec44-ca48-46b3-a5e1-ff140762b48a" />
+        <classShapeMoniker Id="b5fef771-b370-4a63-8969-f7b475a527bb" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="bcbe3ce8-3328-4fcc-9c03-a4b4981b206b" absoluteBounds="9.375, 6.125, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/LightWriterDataContext/RangeMoveBlock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe806beb-3d53-4959-9027-f80e60d997d2" absoluteBounds="9.39, 6.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.6250025 : 2.82859537760417); (6.6250025 : 8.60020182291667); (6.82291791666667 : 8.60020182291667 : JumpStart); (6.98958458333333 : 8.60020182291667 : JumpEnd); (9.375 : 8.60020182291667)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LightWriterDataContext/Algorithm/Algorithm_RangeMoveBlock" />
+      <nodes>
+        <classShapeMoniker Id="7855ec44-ca48-46b3-a5e1-ff140762b48a" />
+        <classShapeMoniker Id="bcbe3ce8-3328-4fcc-9c03-a4b4981b206b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d5126658-0632-46fb-ac50-12fd3d8069a4" absoluteBounds="9.5, 1.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/LightWriterDataContext/Rule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3896830f-8b74-4352-addd-a7fc69e454d7" absoluteBounds="9.515, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.125 : 2.03929768880208); (9.5 : 2.03929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LightWriterDataContext/Algorithm/Algorithm_Rule" />
+      <nodes>
+        <classShapeMoniker Id="7855ec44-ca48-46b3-a5e1-ff140762b48a" />
+        <classShapeMoniker Id="d5126658-0632-46fb-ac50-12fd3d8069a4" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ca460ac8-6b05-46ec-b476-899066ee6677" absoluteBounds="5.75, 9, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LightWriterDataContext/CommentBlock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="41b4cba8-c3e5-4222-9b92-9f91a8ce70a5" absoluteBounds="5.7650000000000006, 9.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.90625125 : 2.82859537760417); (6.90625125 : 9)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LightWriterDataContext/Algorithm/Algorithm_CommentBlock" />
+      <nodes>
+        <classShapeMoniker Id="7855ec44-ca48-46b3-a5e1-ff140762b48a" />
+        <classShapeMoniker Id="ca460ac8-6b05-46ec-b476-899066ee6677" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

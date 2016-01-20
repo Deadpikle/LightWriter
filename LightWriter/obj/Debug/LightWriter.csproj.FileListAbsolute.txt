@@ -1,0 +1,32 @@
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\bin\LightWriter.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\bin\LightWriter.pdb
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\bin\System.Data.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\bin\System.Data.Linq.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\obj\Debug\LightWriter.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\obj\Debug\LightWriter.pdb
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\bin\System.Web.Helpers.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\bin\System.Web.Helpers.xml
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\obj\Debug\LightWriter.csprojResolveAssemblyReference.cache
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\bin\SquishIt.Framework.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\bin\AjaxMin.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\bin\Yahoo.Yui.Compressor.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\bin\EcmaScript.NET.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\bin\Iesi.Collections.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\bin\SquishIt.Framework.pdb
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter\LightWriter\LightWriter\LightWriter\bin\AjaxMin.pdb
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\bin\LightWriter.dll.config
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\bin\LightWriter.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\bin\LightWriter.pdb
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\bin\SquishIt.Framework.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\bin\System.Data.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\bin\System.Data.Linq.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\bin\AjaxMin.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\bin\Yahoo.Yui.Compressor.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\bin\EcmaScript.NET.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\bin\Iesi.Collections.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\bin\SquishIt.Framework.pdb
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\bin\System.Web.Helpers.xml
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\bin\AjaxMin.pdb
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\obj\Debug\LightWriter.csprojResolveAssemblyReference.cache
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\obj\Debug\LightWriter.dll
+C:\Users\Michael Babienco\Documents\College\Senior Part 1\Senior Project\LightWriter Project Submission\Source Code\LightWriter\LightWriter\obj\Debug\LightWriter.pdb

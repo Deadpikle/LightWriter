@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LightWriterData" Class="LightWriterDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="LightWriterDataConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Association Name="User_Algorithm" Member="Algorithms" AccessModifier="Internal" ThisKey="ID" OtherKey="UserID" Type="Algorithm" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Algorithms" Member="Algorithms">
+    <Type Name="Algorithm">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Algorithm_SingleBlock" Member="SingleBlocks" AccessModifier="Internal" ThisKey="ID" OtherKey="AlgorithmID" Type="SingleBlock" />
+      <Association Name="Algorithm_ComparisonBlock" Member="ComparisonBlocks" AccessModifier="Internal" ThisKey="ID" OtherKey="AlgorithmID" Type="ComparisonBlock" />
+      <Association Name="Algorithm_CircleBlock" Member="CircleBlocks" AccessModifier="Internal" ThisKey="ID" OtherKey="AlgorithmID" Type="CircleBlock" />
+      <Association Name="Algorithm_SingleMoveBlock" Member="SingleMoveBlocks" AccessModifier="Internal" ThisKey="ID" OtherKey="AlgorithmID" Type="SingleMoveBlock" />
+      <Association Name="Algorithm_ComparisonMoveBlock" Member="ComparisonMoveBlocks" AccessModifier="Internal" ThisKey="ID" OtherKey="AlgorithmID" Type="ComparisonMoveBlock" />
+      <Association Name="Algorithm_RangeBlock" Member="RangeBlocks" AccessModifier="Internal" ThisKey="ID" OtherKey="AlgorithmID" Type="RangeBlock" />
+      <Association Name="Algorithm_RangeMoveBlock" Member="RangeMoveBlocks" AccessModifier="Internal" ThisKey="ID" OtherKey="AlgorithmID" Type="RangeMoveBlock" />
+      <Association Name="Algorithm_Rule" Member="Rules" AccessModifier="Internal" ThisKey="ID" OtherKey="AlgorithmID" Type="Rule" />
+      <Association Name="Algorithm_CommentBlock" Member="CommentBlocks" AccessModifier="Internal" ThisKey="ID" OtherKey="AlgorithmID" Type="CommentBlock" />
+      <Association Name="User_Algorithm" Member="User" ThisKey="UserID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SingleBlock" Member="SingleBlocks">
+    <Type Name="SingleBlock">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AlgorithmID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RowID" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ColumnID" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ActionString" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SetToColor" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="Algorithm_SingleBlock" Member="Algorithm" ThisKey="AlgorithmID" OtherKey="ID" Type="Algorithm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ComparisonBlock" Member="ComparisonBlocks">
+    <Type Name="ComparisonBlock">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AlgorithmID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ComparisonActionString" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RowOrColumnID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="ActionString" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SetToColor" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="Algorithm_ComparisonBlock" Member="Algorithm" ThisKey="AlgorithmID" OtherKey="ID" Type="Algorithm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CircleBlock" Member="CircleBlocks">
+    <Type Name="CircleBlock">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AlgorithmID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SetToColor" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ActionString" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="RowID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="ColumnID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Radius" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Algorithm_CircleBlock" Member="Algorithm" ThisKey="AlgorithmID" OtherKey="ID" Type="Algorithm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SingleMoveBlock" Member="SingleMoveBlocks">
+    <Type Name="SingleMoveBlock">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AlgorithmID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RowID" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ColumnID" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ActionString" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SetToColor" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Direction" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="NumberBlocksToMove" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberTicksBeforeChange" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Algorithm_SingleMoveBlock" Member="Algorithm" ThisKey="AlgorithmID" OtherKey="ID" Type="Algorithm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ComparisonMoveBlock" Member="ComparisonMoveBlocks">
+    <Type Name="ComparisonMoveBlock">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AlgorithmID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RowOrColumnID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="ActionString" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SetToColor" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Direction" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="NumberBlocksToMove" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberTicksBeforeChange" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ComparisonActionString" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="Algorithm_ComparisonMoveBlock" Member="Algorithm" ThisKey="AlgorithmID" OtherKey="ID" Type="Algorithm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RangeBlock" Member="RangeBlocks">
+    <Type Name="RangeBlock">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AlgorithmID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActionString" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SetToColor" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="LeftRowOrColumnID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="RightRowOrColumnID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Association Name="Algorithm_RangeBlock" Member="Algorithm" ThisKey="AlgorithmID" OtherKey="ID" Type="Algorithm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RangeMoveBlock" Member="RangeMoveBlocks">
+    <Type Name="RangeMoveBlock">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AlgorithmID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActionString" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SetToColor" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="LeftRowOrColumnID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="RightRowOrColumnID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Direction" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="NumberBlocksToMove" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberTicksBeforeChange" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Algorithm_RangeMoveBlock" Member="Algorithm" ThisKey="AlgorithmID" OtherKey="ID" Type="Algorithm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Rules" Member="Rules">
+    <Type Name="Rule">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DefaultBoxColor" Type="System.String" DbType="VarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="ColorMixing" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="MSPerTick" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AlgorithmID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Algorithm_Rule" Member="Algorithm" ThisKey="AlgorithmID" OtherKey="ID" Type="Algorithm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CommentBlock" Member="CommentBlocks">
+    <Type Name="CommentBlock">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AlgorithmID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="VarChar(1024) NOT NULL" CanBeNull="false" />
+      <Association Name="Algorithm_CommentBlock" Member="Algorithm" ThisKey="AlgorithmID" OtherKey="ID" Type="Algorithm" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightWriter", "LightWriter\LightWriter.csproj", "{E1D999A4-0CE5-4D09-AD4A-6B6DCD5D70CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1D999A4-0CE5-4D09-AD4A-6B6DCD5D70CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1D999A4-0CE5-4D09-AD4A-6B6DCD5D70CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1D999A4-0CE5-4D09-AD4A-6B6DCD5D70CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1D999A4-0CE5-4D09-AD4A-6B6DCD5D70CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1D999A4-0CE5-4D09-AD4A-6B6DCD5D70CF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
