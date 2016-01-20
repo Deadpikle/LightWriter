@@ -1,6 +1,6 @@
 # LightWriter
 
-LightWriter is a basic online web application that can be used to teach very basic programming concepts, such as loops and conditionals. LightWriter was created for a computer science project at Southern Adventist University and represents the work of a single semester. Much (if not all) of the code needs refactoring, cleaning up, and other basic improvements, but the basic site is fully functional as-is. It's also kinda fun.
+LightWriter is a basic online web application that can be used to teach very basic programming concepts, such as loops and conditionals. LightWriter was created for a computer science project at Southern Adventist University in 2013, and it represents the work of a single semester. Much (if not all) of the code needs refactoring, cleaning up, and other basic improvements, but the basic site is fully functional as-is. It's also kinda fun.
 
 ### Sample Output Screenshots
 
